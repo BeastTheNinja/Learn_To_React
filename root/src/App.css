@@ -1,0 +1,75 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+h1, h2 {
+  color: #ffffff;
+}
+
+/* Container til begge lister */
+.lister {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* afstand mellem fordele og ulemper */
+  flex-wrap: wrap; /* gør dem responsive på små skærme */
+}
+
+/* Fælles styling til lister */
+.fordele,
+.ulemper {
+  text-align: left;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  background-color: #20232a;
+  max-width: 300px; /* hver liste får sin egen bredde */
+  flex: 1 1 300px; /* responsive flex-bredde */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fordele {
+  border: 2px solid #61dafb;
+  color: #61dafb;
+}
+
+.ulemper {
+  border: 2px solid #ff6b6b;
+  color: #ff6b6b;
+}
+
+/* Hover-effekt */
+.fordele:hover,
+.ulemper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Liste-items med ikoner */
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+  list-style: none;
+  position: relative;
+  padding-left: 1.4rem;
+}
+
+.fordele li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #61dafb;
+}
+
+.ulemper li::before {
+  content: "✖";
+  position: absolute;
+  left: 0;
+  color: #ff6b6b;
+}
