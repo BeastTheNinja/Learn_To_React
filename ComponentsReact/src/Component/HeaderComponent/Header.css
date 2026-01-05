@@ -5,3 +5,9 @@ h1{
 h2{
     color: green;
 }
+
+header h1, header h2{
+    background-color: lightblue;
+    padding: 15px;
+    border-radius: 8px;
+}
