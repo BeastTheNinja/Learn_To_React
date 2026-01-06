@@ -1,10 +1,10 @@
 import styles from './Nav.module.scss';
 
-const links = ['Home', 'About', 'Services', 'Contact']
+const links = ['Home', 'Projects', 'Contact'];
 
 export const Nav = () => {
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul className={styles.navList}>
         {links.map(link => (
           <li key={link} className={styles.navItem}>
