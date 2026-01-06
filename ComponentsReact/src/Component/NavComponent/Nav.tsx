@@ -1,13 +1,13 @@
-import './Nav.css'
+import styles from './Nav.module.scss';
 
 const links = ['Home', 'About', 'Services', 'Contact']
 
 export const Nav = () => {
   return (
     <nav>
-      <ul className="nav-list">
+      <ul className={styles.navList}>
         {links.map(link => (
-          <li key={link} className="nav-item">
+          <li key={link} className={styles.navItem}>
             <a href={`#${link.toLowerCase()}`}>{link}</a>
           </li>
         ))}
