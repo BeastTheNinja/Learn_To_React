@@ -1,3 +1,4 @@
+import { HeaderButtons } from "../Button/HeaderButton"
 import { Nav } from "../navComponent/Nav"
 
 // Interface til props
@@ -10,7 +11,10 @@ export const Header = ({ headerText = "Mangler headerText" }: HeaderProps) => {
     return (
         <header className="bg-blue-700 p-4 text-white flex justify-between items-center">
             <h1 className="text-3xl font-bold">{headerText}</h1>
-            <Nav />
+            <div className="flex items-center gap-4">
+                <Nav />
+                <HeaderButtons />
+            </div>
         </header>
 
     )
