@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div className="flex flex-col min-h-screen">
-        <Header headerText='Min Webpage' />
+        <Header headerText='Props er cool!' />
         <MainContent />
         <Footer />
       </div>
