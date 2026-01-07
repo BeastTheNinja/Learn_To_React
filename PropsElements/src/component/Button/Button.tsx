@@ -17,7 +17,7 @@ export const Button = ({ action, size, theme, text }: ButtonProps) => {
     const themeClass =
         theme === "light"
             ? "bg-white text-blue-700 border border-blue-700 hover:bg-blue-100"
-            : "bg-blue-700 text-white border border-blue-700 hover:bg-blue-800";
+            : "bg-red-700 text-white border border-blue-700 hover:bg-blue-300";
 
     return (
         <button
