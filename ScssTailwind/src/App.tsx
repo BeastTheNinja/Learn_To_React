@@ -3,15 +3,15 @@ import { Header } from './component/HeaderComponent/Header'
 import { MainContent } from './component/MainComponent/MainComponent'
 
 function App() {
-  
+
 
   return (
     <>
-        <div className="flex flex-col min-h-screen">
-            <Header />
-            <MainContent />
-            <Footer />
-        </div>
+      <div className="flex flex-col min-h-screen">
+        <Header headerText='Min Webpage' />
+        <MainContent />
+        <Footer />
+      </div>
 
     </>
   )
