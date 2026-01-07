@@ -5,7 +5,7 @@ interface GreetingProps {
 }
 
 // Her laver vi bare en funktion, der tager props som parameter
-export function Greeting({ name }: GreetingProps) {
+export const Greeting = ({ name }: GreetingProps) => {
     return (
         <p>Hej {name}!</p>
     )
